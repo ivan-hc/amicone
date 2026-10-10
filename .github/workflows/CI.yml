@@ -37,12 +37,12 @@ jobs:
             fi
             am -R "$a"
           done
-          
-          - name: Upload artifact
-            uses: actions/upload-artifact@v7.0.2
-            with:
-              name: Upload icons
-              path: 'dist'
+         
+      - name: Upload artifact
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: Upload icons
+          path: 'dist'
 
 
 
