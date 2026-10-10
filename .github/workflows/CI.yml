@@ -27,7 +27,6 @@ jobs:
 
       - name: "Run AM install"
         run: |
-          sudo apt update && sudo apt install curl git
           mkdir -p dist
           ARGS=$(cat missing-icons.txt | xargs)
           for a in $ARGS; do
