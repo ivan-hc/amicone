@@ -21,16 +21,9 @@ jobs:
       - name: "Checkout source repository"
         uses: actions/checkout@v7
 
-      - name: "Install AM manually"
+      - name: "Install AM"
         run: |
-          sudo mkdir -p /opt/am/modules /usr/local/bin || exit 1
-          sudo cp -r ./APP-MANAGER /opt/am/APP-MANAGER && sudo chmod a+x /opt/am/APP-MANAGER || exit 1
-          sudo ln -fs /opt/am/APP-MANAGER /usr/local/bin/am || exit 1
-          sudo touch /opt/am/remove || exit 1
-          sudo cp -r modules/*.am /opt/am/modules/
-          export AMDATADIR="${XDG_DATA_HOME:-$HOME/.local/share}"/AM
-          mkdir -p "$AMDATADIR" || exit 1
-          cp -r programs/x86_64-apps "$AMDATADIR"/ || exit 1
+          wget -q https://raw.githubusercontent.com/ivan-hc/AM/main/INSTALL && chmod a+x ./INSTALL && sudo ./INSTALL && rm ./INSTALL || exit 1
 
       - name: "Run AM install"
         run: |
