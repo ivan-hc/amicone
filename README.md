@@ -10,3 +10,4 @@ for a in apps/*; do a=$(echo "$a" | sed 's#apps/##g'); [ ! -f icons/"$a".png ] &
 4. Extract and convert all icons to 128x128 PNG files
 5. Upload the icons to https://github.com/Portable-Linux-Apps/Portable-Linux-Apps.github.io/tree/main/icons
 
+NOTE: If the icons have not been extracted, wait for improvements to the "AM" package manager or proceed manually.
