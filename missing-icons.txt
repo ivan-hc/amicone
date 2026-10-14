@@ -1,11 +1,7 @@
-agent-toolkit
 atuin-server
 ball
 cleansys
-concrete
-dodaios
 ficc
-figcraft
 getjmanga
 global-platform-gui-qt
 hyprspace
