@@ -5,6 +5,7 @@ cleansys
 concrete
 dodaios
 ficc
+figcraft
 getjmanga
 global-platform-gui-qt
 hyprspace
@@ -23,7 +24,6 @@ neocord
 nmse
 nx-optimizer
 ogresync
-photo-tinder-desktop
 pixiv-bulk-downloader
 pla-site-tool
 ps5-ffpfs-cli
@@ -31,4 +31,3 @@ pyuploadtool
 rommulus
 sdr-j-fm
 tasks-nvim
-vizza
