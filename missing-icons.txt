@@ -23,9 +23,11 @@ nx-optimizer
 ogresync
 pixiv-bulk-downloader
 pla-site-tool
+poncho-wonky
 ps5-ffpfs-cli
 pyuploadtool
 ritmo-music-tracker
 rommulus
 sdr-j-fm
 tasks-nvim
+ting
