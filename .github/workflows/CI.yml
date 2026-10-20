@@ -30,7 +30,7 @@ jobs:
           mkdir -p dist
           ARGS=$(cat missing-icons.txt | xargs)
           for a in $ARGS; do
-            am -y -i "$a"
+            am -y -i "$a" | echo "Installing $a"
             if [ -d /opt/"$a"/icons ] && [ -n "$(ls -A /opt/"$a"/icons)" ]; then
               mv /opt/"$a"/icons/* dist/
             fi
